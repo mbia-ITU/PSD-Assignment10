@@ -134,3 +134,23 @@ val it: int = 0
 ```
 
 ## 11.8
+
+### 11.8.i
+
+```{}
+> run (Every(Write(Prim("+", CstI 1, (Prim("*", CstI 2, FromTo(1, 4)))))));;
+```
+
+### 11.8.ii
+
+```{}
+> run (Write(Prim("<", CstI 50, Prim("*", FromTo(1, 10), CstI 7))));;
+```
+
+```{}
+
+```
+
+```{}
+
+```
