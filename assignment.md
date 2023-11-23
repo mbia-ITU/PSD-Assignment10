@@ -152,3 +152,20 @@ val it: int = 0
 ```
 
 ### 11.8.iii
+
+We have added Prim1 to Icon.fs in the expr type, and as a case in eval.
+
+Then we ran the following two functions, to check that the upgrade works.
+
+```{}
+run (Every(Write(Prim1("sqr", FromTo(1, 10)))));;
+1 4 9 16 25 36 49 64 81 100 val it: value = Int 0
+
+run (Every(Write(Prim1("even", FromTo(1, 10)))));;
+2 4 6 8 10 val it: value = Int 0
+```
+
+### 11.8.iv
+
+run (Every(Write(Prim1("multiples", FromTo(3,4)))));;
+run (Every(Write(Prim1("multiples", CstI 3))));;
