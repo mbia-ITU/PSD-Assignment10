@@ -141,16 +141,14 @@ val it: int = 0
 > run (Every(Write(Prim("+", CstI 1, (Prim("*", CstI 2, FromTo(1, 4)))))));;
 ```
 
+```{}
+> run (Every(Write(Prim("+", Prim("*", FromTo(2, 4), CstI 10), FromTo(1, 2)))));;
+```
+
 ### 11.8.ii
 
 ```{}
 > run (Write(Prim("<", CstI 50, Prim("*", FromTo(1, 10), CstI 7))));;
 ```
 
-```{}
-
-```
-
-```{}
-
-```
+### 11.8.iii
